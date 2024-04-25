@@ -416,3 +416,13 @@ div.forEach(el => {
 		el.appendChild(aside);
 	}
 });
+
+
+
+let videos = document.querySelectorAll('video')
+
+videos.forEach(video => {
+	video.setAttribute('poster','https://res.cloudinary.com/rangle/image/upload/v1663619433/rangle.io/blogs/heres-why-you-want-to-use-react-vr/actual%20feature%20photo.gif')
+})
+
+
