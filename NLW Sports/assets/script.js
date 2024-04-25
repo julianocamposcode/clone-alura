@@ -428,10 +428,9 @@ if (ignite != null) {
 }
 
 
+let videos = document.querySelectorAll('video')
 
-const video = document.querySelectorAll('video')
-
-
-
-
-
+videos.forEach(video => {
+	video.setAttribute('poster','https://manezinhonews.com.br/images/noticias/14127/30111019_maxresdefa.jpg.jpg')
+	video.removeAttribute('controls');
+})
