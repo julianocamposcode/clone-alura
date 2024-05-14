@@ -126,7 +126,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   padding: 5rem;
-  justify-content: space-around;
+  /* justify-content: space-evenly */
   padding-top: 12rem;
 }
 
