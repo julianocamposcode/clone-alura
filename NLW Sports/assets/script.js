@@ -13,7 +13,6 @@ const section = document.querySelectorAll('section')
 const h = document.querySelectorAll('h1');
 const ignite = document.querySelector('.ignite');
 
-
 setaRight.onclick = () => {
 
 	let classes = {
@@ -34,21 +33,21 @@ setaRight.onclick = () => {
 }
 
 document.addEventListener('keydown', (event) => {
-	
+
 	if (event.ctrlKey && event.keyCode === 66) {
 		let classes = {
-		header: "mudaNav",
-		main: "adjust"
-	}
+			header: "mudaNav",
+			main: "adjust"
+		}
 
-	const estilo1 = JSON.parse(localStorage.getItem('header'));
+		const estilo1 = JSON.parse(localStorage.getItem('header'));
 
-	const estilo2 = JSON.parse(localStorage.getItem('main'));
+		const estilo2 = JSON.parse(localStorage.getItem('main'));
 
-	header.classList.toggle(estilo1);
-	main.classList.toggle(estilo2);
-	main.classList = ''
-	setaRight.classList.toggle('block')
+		header.classList.toggle(estilo1);
+		main.classList.toggle(estilo2);
+		main.classList = ''
+		setaRight.classList.toggle('block')
 	}
 
 });
@@ -431,6 +430,6 @@ if (ignite != null) {
 let videos = document.querySelectorAll('video')
 
 videos.forEach(video => {
-	video.setAttribute('poster','https://manezinhonews.com.br/images/noticias/14127/30111019_maxresdefa.jpg.jpg')
+	video.setAttribute('poster', 'https://manezinhonews.com.br/images/noticias/14127/30111019_maxresdefa.jpg.jpg')
 	video.removeAttribute('controls');
 })

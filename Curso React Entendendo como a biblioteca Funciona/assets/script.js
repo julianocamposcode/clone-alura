@@ -26,11 +26,10 @@ setaRight.onclick = () => {
 
 	let estilo2 = JSON.parse(localStorage.getItem('main'));
 
-	header.classList.toggle(estilo1);
-	main.classList.toggle(estilo2);
-	setaRight.classList.toggle('block')
+	header.classList.add(estilo1);
+	main.classList.add(estilo2);
+	setaRight.classList.add('block')
 }
-
 setaLeft.onclick = () => {
 
 	let classes = {
@@ -288,11 +287,11 @@ for (let i of section) {
 				//cabecal fixed 
 
 
-		// const cabecals = document.querySelectorAll('.cabecal')
-		// cabecals.forEach(cabecal => {
+				// const cabecals = document.querySelectorAll('.cabecal')
+				// cabecals.forEach(cabecal => {
 
-		// 	cabecal.classList.add('cabecal_fixed')
-		// })
+				// 	cabecal.classList.add('cabecal_fixed')
+				// })
 			}
 
 			if (scrollY <= 10) {
@@ -422,7 +421,7 @@ div.forEach(el => {
 let videos = document.querySelectorAll('video')
 
 videos.forEach(video => {
-	video.setAttribute('poster','https://res.cloudinary.com/rangle/image/upload/v1663619433/rangle.io/blogs/heres-why-you-want-to-use-react-vr/actual%20feature%20photo.gif')
+	video.setAttribute('poster', 'https://res.cloudinary.com/rangle/image/upload/v1663619433/rangle.io/blogs/heres-why-you-want-to-use-react-vr/actual%20feature%20photo.gif')
 	video.removeAttribute('controls');
 })
 
